@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese');
+
+@theme{
+    /* colors */
+    --color-primary:#08296C;
+    --color-primary-1:#007DC4;
+    --color-primary-2:#00C0F3;
+    --color-primary-3:#094886;
+    --color-dark-primary:#000D26;
+    --color-secondary:#E7ECF0;
+    --color-secondary-1:rgba(217, 217, 217, 0.8);
+    --color-secondary-2:#E7ECF0;
+    --color-secondary-4: rgba(180, 222, 251, 1);
+    --color-secondary-7: rgba(237, 246, 255, 1);
+    --color-gradient-1: rgba(9, 72, 134, 1);
+    --color-gradient-2: rgba(2, 17, 32, 1);
+    --color-gradient-3:rgba(193, 216, 239, 1);
+    --color-gradient-4:rgba(193, 216, 239, 0.1);
+    --color-gray-1: rgba(55, 65, 81, 1);
+    --color-gray-2: rgba(0,0,0 , .8);
+    --color-color-text:#5F8EBC;
+    --breakpoint-xlscreen:90rem;
+    --breakpoint-largest: 81em;  
+    --breakpoint-large: 65.75em;  
+    --breakpoint-mediun: 39.9375em; 
+    --breakpoint-small: 25em; 
+}
+

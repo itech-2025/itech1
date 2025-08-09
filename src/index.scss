@@ -1,0 +1,81 @@
+.slide-progress {
+  animation: slideProgress 4s linear forwards;
+}
+.number-progress {
+  animation: numProgress 4s linear forwards;
+}
+
+.slide-image {
+  animation: scaleFade 10s ease-in-out  infinite;
+}
+.stroke-blue {
+  -webkit-text-stroke: 1px #1b4eb4; /* Tailwind's blue-500 */
+}
+.stroke-white {
+  -webkit-text-stroke: 0.3px #fff;
+}
+.item{
+        &::before{
+            content:"";
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.155);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scaleY(0);
+            transition: transform .9s,
+                        background-color .9s;
+        }
+        &--active::before{
+            transform: scaleY(1);
+        }
+
+    }
+@keyframes slideProgress {
+  0% {
+    width: 0%;
+  }
+   40% {
+    width: 50%;
+    scale: 1;
+  }
+  90% {
+    width: 50%;
+    scale: 1; /* Hold here from 40% to 80% → 2s of pause */
+  }
+  100%{
+    scale: 0;
+  }
+}
+
+@keyframes numProgress {
+  0% {
+    width: 3rem;
+  }
+  40% {
+    width: 4rem;
+  }
+  90% {
+    width: 4rem;
+  }
+  100%{
+    width: 3rem;
+  }
+}
+@keyframes scaleFade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
