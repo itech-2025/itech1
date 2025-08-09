@@ -28,7 +28,7 @@ const SectionsHeader = ({name, description,description1,description2,description
           viewport={{ once: true }}
         className="rounded-xl md:rounded-3xl h-fit w-full relative overflow-hidden">
           <div className="absolute top-0 inset-0 backdrop-blur-[1px] h-70 md:h-120 rounded-xl md:rounded-3xl bg-black/10 z-1"/>{/*add blur above the image to make the text clear*/}
-            <img src={image} className={`w-full h-70 md:h-120 object-cover object-center rounded-b-xl md:rounded-b-3xl ${className}`}/>
+            <img loading="lazy" src={image} className={`w-full h-70 md:h-120 object-cover object-center rounded-b-xl md:rounded-b-3xl ${className}`}/>
             {/* Breadcrumbs container with decorative edge smoothing */}
             <div className={`h-20 max-w-fit bg-white -mt-15 ${i18next.language === 'en' ? 'ml-5 md:ml-11' : 'mr-5 md:mr-11'} relative z-1 flex justify-between items-start rounded-2xl md:rounded-t-3xl`}>
               <div className={`w-5 h-10 self-center ${i18next.language === 'en' ? '-ml-[19px] rounded-br-[20px]' : '-mr-[19px] rounded-bl-[20px]'}  relative bg-white/0 shadow-[0px_20px_0px_0px_rgba(255,255,255,1)] z-1`}/>

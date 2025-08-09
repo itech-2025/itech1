@@ -60,7 +60,7 @@ const Popup = () => {
         <div dir={i18next.language==='ar'?"ltr":"rtl"} className='bg-white p-5 sm:w-[75%] w-[85%] h-[75%] lg:h-fit text-gray-600 flex flex-row absolute top-[50%] left-[50%] translate-[-50%]  rounded-3xl shadow-[0_2rem_4rem_rgba(0,0,0, .2)] overflow-hidden opacity-0 transform scale-50 transition-all group-target:opacity-100 group-target:translate-[-50%] group-target:scale-110 delay-200'>
             <a href="#" className={`text-[2.6rem] absolute -top-3 ${i18next.language==='ar'?"right-2":"left-2"}  z-3 text-primary transition-all`}>&times;</a>
             <div className='w-[75%] md:block hidden rounded-3xl overflow-hidden'>
-                    <img src={popupImg} className='w-full h-full object-cover' />
+                    <img loading="lazy" src={popupImg} className='w-full h-full object-cover' />
             </div>
             <div className={`relative lg:h-fit h-full w-full bg-white z-1 overflow-y-auto lg:overflow-y-hidden`}>
                     <form dir={i18next.language==='ar'?"rtl":"ltr"} ref={formRef} onSubmit={handleSubmit} className="flex flex-col pt-10 sm:px-10 px-5 gap-4 relative z-0">

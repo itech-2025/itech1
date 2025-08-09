@@ -60,7 +60,7 @@ const NewsDetail = () => {
                             {t(nextNews.title)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={nextNews.image}
                     alt={t(nextNews.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"
@@ -101,7 +101,7 @@ const NewsDetail = () => {
                             {t(prevNews.title)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={prevNews.image}
                     alt={t(prevNews.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"

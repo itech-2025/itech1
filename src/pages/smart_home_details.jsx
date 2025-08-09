@@ -59,7 +59,7 @@ const Smart_home_details = () => {
                             {t(nextsmarthome.text)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={nextsmarthome.image}
                     alt={t(nextsmarthome.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"
@@ -100,7 +100,7 @@ const Smart_home_details = () => {
                             {t(prevsmarthome.text)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={prevsmarthome.image}
                     alt={t(prevsmarthome.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"

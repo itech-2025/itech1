@@ -65,7 +65,7 @@ const swipercontent = [
             <div  className="rounded-lg shadow">
               <div key={index} className={`${currentSlide === index ? 'item--active' : ''} item absolute top-0 inset-0 backdrop-blur-xs z-1`}/>
               {/* Slide title and subtitle */}
-              <img src={item.image} className="w-full md:h-[100vh] h-[80vh] object-cover" />
+              <img loading="lazy" src={item.image} className="w-full md:h-[100vh] h-[80vh] object-cover" />
               <motion.div
                 initial="hidden"
                 animate={currentSlide === index ? "visible" : "hidden"}
@@ -87,8 +87,8 @@ const swipercontent = [
                     viewport={{ once: false }}
                     className="absolute flex sm:left-1/2 left-30 top-[95%] -translate-x-1/2 gap-3 md:w-fit md:h-fit w-80 h-10"
                   >
-                    <img src={brand1} className="w-20 md:w-full" />
-                    <img src={brand2} className="w-20 md:w-full " />
+                    <img loading="lazy" src={brand1} className="w-20 md:w-full" />
+                    <img loading="lazy" src={brand2} className="w-20 md:w-full " />
                   </motion.div>
                     
                 )}

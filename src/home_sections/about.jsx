@@ -51,7 +51,7 @@ const { t } = useTranslation();
                     transition={{ duration: 1, ease: "easeOut", delay:1.7 }}
                     viewport={{once:true}}
                     className="xlscreen:h-fit xlscreen:w-fit lg:w-160 md:w-115 sm:w-90 hidden sm:block absolute left-2 top-0">
-                    <img src={hand1}/>
+                    <img loading="lazy" src={hand1}/>
                 </motion.div>
                 <motion.div
                     initial={{x: 600, y:180, opacity:0, rotate:-20 }}
@@ -59,7 +59,7 @@ const { t } = useTranslation();
                     transition={{ duration: 1, ease: "easeOut", delay:1.7 }}
                     viewport={{once:true}}
                     className="xlscreen:h-fit xlscreen:w-fit lg:w-160 md:w-115 sm:w-90 hidden sm:block absolute bottom-0 right-2">
-                    <img src={hand2}/>
+                    <img loading="lazy" src={hand2}/>
                 </motion.div>
                 <motion.div //circle image in the middle
                         initial={{scale:0 }}
@@ -67,7 +67,7 @@ const { t } = useTranslation();
                         transition={{ duration: 1, ease: "easeOut", delay:2 }}
                         viewport={{once:true}}
                         className="xlscreen:h-70 lg:h-60 md:h-45 sm:h-35 h-23 xlscreen:w-70 lg:w-60 md:w-45 sm:w-35 w-23 rounded-full absolute top-[53%] left-[50%] translate-[-50%] overflow-hidden">
-                    <motion.img
+                    <motion.img loading="lazy"
                         initial={{ scale: 1 }}
                         animate={{ scale: [1, 1.2, 1] }}
                         transition={{duration: 5, ease: "easeOut", delay:1.6, repeat: Infinity, foreverrepeatType: "loop"}}

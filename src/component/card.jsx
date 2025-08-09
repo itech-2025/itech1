@@ -15,7 +15,7 @@ const RightCard = ({image, text, subText, className = "", delay = 0, width="", p
         </div>
         <div className="flex flex-col justify-center">
             <div className="w-19 h-19 rounded-r-full bg-dark-primary backdrop-blur-[2px] -mr-16">
-                <img src={image} className="md:w-full md:h-full w-[90%] h-[90%] object-cover mr-3 md:mt-0 mt-0.5" />
+                <img loading="lazy" src={image} className="md:w-full md:h-full w-[90%] h-[90%] object-cover mr-3 md:mt-0 mt-0.5" />
                 <div className="w-5 h-9 relative bg-transparent border border-transparent rounded-bl-2xl shadow-[0px_20px_0px_0px_rgba(0,13,38)] mr-11 md:-mt-28 -mt-26.5  -z-1" />
                 <div className="w-5 h-9 relative bg-transparent border border-transparent rounded-tl-2xl shadow-[0px_-20px_0px_0px_rgba(0,13,38)] mr-11 mt-19 -z-1" />
             </div>

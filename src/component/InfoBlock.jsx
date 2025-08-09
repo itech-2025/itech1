@@ -19,7 +19,7 @@ const InfoBlock = ({image, text, subtext, blockLine="", boxHeight="", className,
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className={`relative z-0 lg:h-70 h-50 overflow-hidden rounded-2xl ${boxHeight}`}>
-            <img src={image} className={`w-full h-full object-cover object-center group-hover:scale-120 ${isTouched ? 'scale-120' : ''} duration-300 transition ease-in`}/>
+            <img loading="lazy" src={image} className={`w-full h-full object-cover object-center group-hover:scale-120 ${isTouched ? 'scale-120' : ''} duration-300 transition ease-in`}/>
         </motion.div>
         {/*content */}
         <motion.div
@@ -60,7 +60,7 @@ const Infobox = ({image, date, title, details, goTo = "/", className="", imagest
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative w-full h-[18rem] overflow-hidden rounded-3xl">
-            <img src={image} className={`w-full h-full object-cover object-center group-hover:scale-105 duration-300 transition ease-in ${imagestyle}`}/>
+            <img loading="lazy" src={image} className={`w-full h-full object-cover object-center group-hover:scale-105 duration-300 transition ease-in ${imagestyle}`}/>
         </motion.div>
         {/*content*/}
         <motion.div

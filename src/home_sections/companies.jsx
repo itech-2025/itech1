@@ -26,7 +26,7 @@ const Companies = () => {
           <Marquee speed={300} direction="right"> 
           {logos.map((image, index) => (//loop contain slider image
           <div key={index} className="bg-gradient-to-b from-gray-300 to-white rounded-3xl mx-3 px-5">
-            <img className='object-contain h-50 w-50' src={image} alt={`Slide ${index}`} />
+            <img loading="lazy" className='object-contain h-50 w-50' src={image} alt={`Slide ${index}`} />
           </div>
           ))}
           </Marquee>
@@ -37,7 +37,7 @@ const Companies = () => {
           <Marquee speed={300}>
           {logos.map((image, index) => (
           <div key={index} className="bg-gradient-to-b from-white to-gray-300 rounded-3xl mx-3 px-5">
-            <img className='object-contain h-50 w-50' src={image} alt={`Slide ${index}`} />
+            <img loading="lazy" className='object-contain h-50 w-50' src={image} alt={`Slide ${index}`} />
           </div>
           ))}
           </Marquee>

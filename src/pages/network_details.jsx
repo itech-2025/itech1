@@ -63,7 +63,7 @@ const Network_details = () => {
                             {t(nextnetwork.text)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={nextnetwork.image}
                     alt={t(nextnetwork.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"
@@ -104,7 +104,7 @@ const Network_details = () => {
                             {t(prevnetwork.text)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={prevnetwork.image}
                     alt={t(prevnetwork.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"

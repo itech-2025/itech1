@@ -53,7 +53,7 @@ const MovingDivRight = ({text, subText,buttonText, image, className="", style1, 
             transition={{ duration: 1.2, ease: "easeOut", delay:1 }}
             viewport={{once:true}}
             className="lg:-mr-91 -mr-97 mt-12 rounded-lg overflow-hidden lg:h-110 md:h-90 h-70 w-280 sm:block hidden">
-            <img src={image} className="w-full h-full "/>
+            <img loading="lazy" src={image} className="w-full h-full "/>
         </motion.div>
     </div>
   )
@@ -70,7 +70,7 @@ const MovingDivLeft = ({text, subText,buttonText, image, className="", style1=""
             transition={{ duration: 1.2, ease: "easeOut", delay:1 }}
             viewport={{once:true}}
             className="z-2 lg:-ml-91 -ml-97 mt-12 rounded-lg overflow-hidden lg:h-110 md:h-90 h-70 w-280 sm:block hidden">
-            <img src={image} className="w-full h-full "/>
+            <img loading="lazy" src={image} className="w-full h-full "/>
         </motion.div>
         {/*content*/}
         <motion.div

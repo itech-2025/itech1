@@ -42,7 +42,7 @@ const Why = () => {
             viewport={{ once: true }}
             className="w-[90vw] h-[72vh] overflow-hidden"
         >
-            <img src={image} className="w-full"/>
+            <img loading="lazy" src={image} className="w-full"/>
         </motion.div>}
         {isLargeScreen && <motion.div>
             <div className=" bg-dark-primary rounded-b-3xl">

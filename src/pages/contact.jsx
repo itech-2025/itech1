@@ -81,27 +81,27 @@ const Contact = () => {
                     <hr className="h-px opacity-10 border-b w-[90%]" />
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 lg:pl-5 lg:pr-0 py-5'>
                         <div className='px-3 py-5 bg-gray-200/10 relative rounded-xl'>
-                            <img src={icon} className=' absolute top-0 left-0'/>
+                            <img loading="lazy" src={icon} className=' absolute top-0 left-0'/>
                             <h4 className='text-lg font-normal font-["Montserrat-Arabic"] leading-relaxed tracking-tight pb-2'>{t("contact.location_header")}</h4>
                             <p className='text-gray-300 text-base font-light font-["Montserrat-Arabic"] leading-normal tracking-tight'>{t("contact.location")}</p>
                         </div>
                         <div className='px-3 py-5 bg-gray-200/10 relative rounded-xl'>
-                            <img src={icon} className=' absolute top-0 left-0'/>
+                            <img loading="lazy" src={icon} className=' absolute top-0 left-0'/>
                             <h4 className='text-lg font-normal font-["Montserrat-Arabic"] leading-relaxed tracking-tight  pb-2'>{t("contact.phone")}</h4>
                             <p className='text-gray-300 text-base font-light font-["Montserrat-Arabic"] leading-normal tracking-tight'><span className='block pb-2'>00966551347124</span><span>00966509664785</span></p>
                         </div>
                         <div className='px-3 py-5 bg-gray-200/10 relative rounded-xl'>
-                            <img src={icon} className=' absolute top-0 left-0'/>
+                            <img loading="lazy" src={icon} className=' absolute top-0 left-0'/>
                             <h4 className='text-lg font-normal font-["Montserrat-Arabic"] leading-relaxed tracking-tight  pb-2'>{t("contact.email")}</h4>
                             <a className='text-gray-300 text-base font-light font-["Montserrat-Arabic"] leading-normal tracking-tight'>Info@gulf-itech.com</a>
                         </div>
                         <div className='px-3 py-5 bg-gray-200/10 relative rounded-xl'>
-                            <img src={icon} className=' absolute top-0 left-0'/>
+                            <img loading="lazy" src={icon} className=' absolute top-0 left-0'/>
                             <h4 className='text-lg font-normal font-["Montserrat-Arabic"] leading-relaxed tracking-tight  pb-2'>{t("contact.website")}</h4>
                             <a>www.gulf-itech.com</a>
                         </div>
                         <div className='px-3 py-5 bg-gray-200/10 relative rounded-xl'>
-                            <img src={icon} className=' absolute top-0 left-0'/>
+                            <img loading="lazy" src={icon} className=' absolute top-0 left-0'/>
                             <h4 className='text-lg font-normal font-["Montserrat-Arabic"] leading-relaxed tracking-tight  pb-2'>{t("contact.social")}</h4>
                             <div className="flex gap-8 text-xl text-secondary-1">
                                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className='hover:text-secondary'>
@@ -119,7 +119,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className='px-3 py-5 bg-gray-200/10 relative rounded-xl'>
-                            <img src={icon} className=' absolute top-0 left-0'/>
+                            <img loading="lazy" src={icon} className=' absolute top-0 left-0'/>
                             <h4 className='text-lg font-normal font-["Montserrat-Arabic"] leading-relaxed tracking-tight  pb-2'>{t("contact.time_text")}</h4>
                             <p className='text-gray-300 text-base font-light font-["Montserrat-Arabic"] leading-normal tracking-tight'>{t("contact.time")}</p>
                         </div>

@@ -72,7 +72,7 @@ const BlueListDev = ({title,content}) => {
                                     </div>
                                     <div className={`w-5 h-10 -mt-11 sm:-mt-14 relative bg-white/0 ${i18next.language === 'en' ? 'rounded-tl-[20px] ml-8 sm:ml-10.5' : 'rounded-tr-[20px] mr-8.5 sm:mr-10.5'} shadow-[0px_-20px_0px_0px_rgba(0,13,38,1)]`}/>
                                 </div>
-                                <img src={image} alt="feature icon" className='absolute top-0 left-0 brightness-500 z-0' />
+                                <img loading="lazy" src={image} alt="feature icon" className='absolute top-0 left-0 brightness-500 z-0' />
                                 <ol className='w-[80%] text-center'>
                                     <li className='text-white sm:text-lg text-sm font-normal font-["Montserrat-Arabic"] leading-normal'>{items}</li>
                                 </ol>

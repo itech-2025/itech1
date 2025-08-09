@@ -57,7 +57,7 @@ const Footer = () => {
             {swipercontent.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className="sm:h-110 h-120 w-full overflow-hidden rounded-t-3xl bg-dark-primary mb-4">
-                    <img src={item} className="slide-image h-full w-full object-cover object-center" />
+                    <img loading="lazy" src={item} className="slide-image h-full w-full object-cover object-center" />
                   </div>
                 </SwiperSlide>
             ))}
@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="bg-dark-primary rounded-3xl -mt-20 relative z-2 px-5 md:px-10 lg:px-15 ">
           <div className='grid lg:grid-cols-3 grid-rows-1 lg:gap-30 relative py-10 sm:py-15 mb-15'>
             <div className='lg:col-1 flex flex-col mb-3 justify-center items-center small:items-start'>
-                <img src={logo} alt="logo" className='lg:w-64 w-50 lg:h-28 h-20 mb-7 brightness-5000'/>
+                <img loading="lazy" src={logo} alt="logo" className='lg:w-64 w-50 lg:h-28 h-20 mb-7 brightness-5000'/>
                 <div className="text-gray-100 text-base font-light font-['Montserrat-Arabic'] leading-normal tracking-wide">{t("footer.details")}</div>
             </div>
             <div className='lg:col-span-2 flex sm:flex-row flex-col sm:gap-10 mt-6 gap-0 sm:justify-between'>
@@ -102,7 +102,7 @@ const Footer = () => {
                     {
                       contact.map((link, index)=>(
                         <li key={index} className="flex gap-0.5 items-start">
-                          <img  src={link.icon} className="w-5 h-5 ml-1 mt-1"/>
+                          <img loading="lazy" src={link.icon} className="w-5 h-5 ml-1 mt-1"/>
                           <a  href={link.url} onClick={()=>setactivelink(link.url)} className=''>
                             <span className="text-gray-100 text-base font-light font-['Montserrat-Arabic'] leading-normal tracking-wide">{link.text}</span>
                           </a>

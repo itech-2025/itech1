@@ -68,7 +68,7 @@ const Services = () => {
                             {t(nextservices.text)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={nextservices.image}
                     alt={t(nextservices.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"
@@ -109,7 +109,7 @@ const Services = () => {
                             {t(prevservices.text)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={prevservices.image}
                     alt={t(prevservices.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"

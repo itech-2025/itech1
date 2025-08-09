@@ -167,7 +167,7 @@ function Navbar  () {
           <div  className="justify-between flex ">
             {/* logo  */}
             <button  onClick={handleHome} className="sm:mr-8 mr-3 sm:ml-5 -ml-3 mt-1.5 mb-3 small:w-fit w-26 small:h-fit h-15 ">
-                <img src={logo} alt="logo" className='mt-2'/>
+                <img loading="lazy" src={logo} alt="logo" className='mt-2'/>
             </button>
               {/* nav container */}
             <div className=" grid-cols-4 gap-1 justify-start w-full items-center hidden largest:grid">
@@ -208,7 +208,7 @@ function Navbar  () {
                             )
                           }
                           {link.submenu_href && (
-                            <img src={icon} className={`-mb-4.5 ${lang=='AR'?"mr-2":"ml-2"} ${navOnHero ? "brightness-500" : "brightness-100 group-hover:brightness-100"} ${activelink === link.href ||isParentActive  ? "brightness-500 group-hover:brightness-500" : "brightness-100 group-hover:brightness-100"} `}/>
+                            <img loading="lazy" src={icon} className={`-mb-4.5 ${lang=='AR'?"mr-2":"ml-2"} ${navOnHero ? "brightness-500" : "brightness-100 group-hover:brightness-100"} ${activelink === link.href ||isParentActive  ? "brightness-500 group-hover:brightness-500" : "brightness-100 group-hover:brightness-100"} `}/>
                           )}
                         </a>
                         {link.submenu_href && hoveredlinkId === link.id && (
@@ -231,7 +231,7 @@ function Navbar  () {
                                   className={`relative flex items-center justify-between transition-transform duration-300 ${hoveredItemId === item.id || activelink === item.href || isLinkActive  ? 'text-primary-1' : 'text-white'}`}
                                 >
                                   <div className='flex w-50 transition-all duration-75'>
-                                    <img src={icon1} className={`-mb-1 ${lang=='AR'?"ml-1":"mr-1"} transition-all duration-300 ease-in-out transform  ${hoveredItemId === item.id ? 'opacity-100 scale-100 ml-3' : 'opacity-0 scale-95 pointer-events-none'}`}/>
+                                    <img loading="lazy" src={icon1} className={`-mb-1 ${lang=='AR'?"ml-1":"mr-1"} transition-all duration-300 ease-in-out transform  ${hoveredItemId === item.id ? 'opacity-100 scale-100 ml-3' : 'opacity-0 scale-95 pointer-events-none'}`}/>
                                     <span className='block relative'>{item.label}</span>
                                   </div>
                                   {link.submenu_href?.some(item => Array.isArray(item.submenu) && item.submenu.length > 0) && (
@@ -252,7 +252,7 @@ function Navbar  () {
                                           href={content.href}
                                           className={`relative w-60 flex items-center transition-transform duration-300 ${hoveredcontentId === content.id || activelink === content.href  ? 'text-primary-1' : 'text-white'}`}
                                         >
-                                            <img src={icon1} className={`-mb-1 ${lang=='AR'?"ml-1":"mr-1"} transition-all duration-300 ease-in-out transform  ${hoveredcontentId === content.id ? 'opacity-100 scale-100 ml-3' : 'opacity-0 scale-95 pointer-events-none'}`}/>
+                                            <img loading="lazy" src={icon1} className={`-mb-1 ${lang=='AR'?"ml-1":"mr-1"} transition-all duration-300 ease-in-out transform  ${hoveredcontentId === content.id ? 'opacity-100 scale-100 ml-3' : 'opacity-0 scale-95 pointer-events-none'}`}/>
                                             <span className='block relative'>{content.label}</span>
                                         </a>
                                       </li>

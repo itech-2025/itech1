@@ -75,7 +75,7 @@ const Product = () => {
             {swipercontent.map((item, index) => (
                 <SwiperSlide key={index}>
                     <div className='absolute top-6 right-6 bg-white px-1.5 rounded-lg text-gray-700 text-base font-normal font-["Montserrat-Arabic"] leading-normal tracking-tight'>{item.name}</div>
-                    <img src={item.image} alt={item.name} className="w-full h-full md:object-cover object-center" />
+                    <img loading="lazy" src={item.image} alt={item.name} className="w-full h-full md:object-cover object-center" />
                 </SwiperSlide>
             ))}
         </Swiper>

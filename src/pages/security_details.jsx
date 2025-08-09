@@ -62,7 +62,7 @@ const security_details = () => {
                             {t(nextsecurity.text)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={nextsecurity.image}
                     alt={t(nextsecurity.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"
@@ -103,7 +103,7 @@ const security_details = () => {
                             {t(prevsecurity.text)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={prevsecurity.image}
                     alt={t(prevsecurity.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"

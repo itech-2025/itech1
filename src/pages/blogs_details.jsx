@@ -66,7 +66,7 @@ const BlogDetails = () => {
                             {t(nextblogs.title)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={nextblogs.image}
                     alt={t(nextblogs.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"
@@ -107,7 +107,7 @@ const BlogDetails = () => {
                             {t(prevblogs.title)}
                         </div>
                     </div>
-                    <img
+                    <img loading="lazy"
                     src={prevblogs.image}
                     alt={t(prevblogs.text)}
                     className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"

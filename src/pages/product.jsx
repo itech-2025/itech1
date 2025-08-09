@@ -77,7 +77,7 @@ const Product = () => {
                 {t(nextproduct.text)}
               </div>
             </div>
-            <img
+            <img loading="lazy"
               src={nextproduct.image}
               alt={t(nextproduct.text)}
               className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"
@@ -125,7 +125,7 @@ const Product = () => {
                 {t(prevproduct.text)}
               </div>
             </div>
-            <img
+            <img loading="lazy"
               src={prevproduct.image}
               alt={t(prevproduct.text)}
               className="sm:w-40 sm:h-32 w-30 h-22 object-cover rounded-md"
