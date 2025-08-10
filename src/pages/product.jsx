@@ -8,7 +8,7 @@ import i18next from 'i18next';
 
 // Helper to create image URLs
 function generateImageUrls(folderName, count) {
-  return Array.from({ length: count }, (_, i) => `/${folderName}/${folderName}-${i + 1}.jpg`);
+  return Array.from({ length: count }, (_, i) => `/${folderName}/${folderName}-${i + 1}.webp`);
 }
 
 // Product data
