@@ -4,11 +4,11 @@ import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import SectionsHeader from '../component/sectionsHeader';
 import { InfoBlock } from "../component/InfoBlock";
 //images
-import image from "../assets/img/blogs (1).webp";
-import photo1 from "../assets/img/blogs (2).webp";
-import photo2 from "../assets/img/blogs (3).webp";
-import photo3 from "../assets/img/blogs (4).webp";
-import photo4 from "../assets/img/blogs (5).webp";
+import image from "../assets/img/blogs (5).webp";
+import photo1 from "../assets/img/blogs (1).webp";
+import photo2 from "../assets/img/blogs (2).webp";
+import photo3 from "../assets/img/blogs (3).webp";
+import photo4 from "../assets/img/blogs (4).webp";
 import photo6 from "../assets/img/blogs (6).webp";
 import photo7 from "../assets/img/blogs (7).webp";
 import photo8 from "../assets/img/blogs (8).webp";

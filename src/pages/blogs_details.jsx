@@ -45,11 +45,8 @@ const BlogDetails = () => {
       />
       {/*navigate between blogs*/}
          <div dir='ltr' className="flex md:flex-row flex-col justify-between items-center md:gap-0 gap-15 mt-10 lg:px-20 md:px-10 px-5">
-            <li dir='rtl' className="flex flex-col md:items-end items-center text-center">
-                <button
-                    onClick={handlenext}
-                    className="group w-18 cursor-pointer text-lg font-light font-['Montserrat-Arabic'] border-b pb-2 border-b-primary-1 hover:border-b-primary-2 overflow-hidden"
-                >
+            <li dir='rtl' onClick={handlenext} className="group cursor-pointer flex flex-col md:items-end items-center text-center">
+                <button className="w-18 cursor-pointer text-lg font-light font-['Montserrat-Arabic'] border-b pb-2 border-b-primary-1 group-hover:border-b-primary-2 overflow-hidden">
                     <div className="flex items-start gap-2 w-20 transition-all duration-300 ease-in-out transform translate-x-3 group-hover:-translate-x-2 group-hover:bg-gradient-to-b group-hover:from-primary-1 group-hover:to-primary group-hover:bg-clip-text group-hover:text-transparent text-dark-primary">
                         <span className="-mt-2 text-3xl">›</span>
                             {t("blogs.next")}
@@ -86,11 +83,8 @@ const BlogDetails = () => {
                     </span>
                 </button>
             </div>
-            <li className="flex flex-col md:items-end items-center text-center">
-                <button
-                    onClick={handleprev}
-                    className={`group ${i18next.language==='en'?"w-25":"w-18"} cursor-pointer text-lg font-light font-['Montserrat-Arabic'] border-b pb-2 border-b-primary-1 hover:border-b-primary-2 overflow-hidden`}
-                >
+            <li onClick={handleprev} className="group cursor-pointer flex flex-col md:items-end items-center text-center">
+                <button className={`${i18next.language==='en'?"w-25":"w-18"} cursor-pointer text-lg font-light font-['Montserrat-Arabic'] border-b pb-2 border-b-primary-1 group-hover:border-b-primary-2 overflow-hidden`}>
                     <div className="flex items-start gap-2 w-20 transition-all duration-300 ease-in-out transform -translate-x-3 group-hover:translate-x-1 group-hover:bg-gradient-to-b group-hover:from-primary-1 group-hover:to-primary group-hover:bg-clip-text group-hover:text-transparent text-dark-primary">
                         <span className="-mt-2 text-3xl">›</span>
                         {t("blogs.prev")}
