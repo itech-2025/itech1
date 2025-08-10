@@ -2,7 +2,7 @@ import SectionsHeader from '../component/sectionsHeader'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import { useState,useRef } from 'react'
-import image from "../assets/img/contact.jpg"
+import image from "../assets/img/contact.webp"
 import icon from "../assets/img/Group 11 (2).svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';

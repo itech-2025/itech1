@@ -1,5 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import SectionsHeader from '../component/sectionsHeader';
 import { allblogsItems } from './blogs'; // make sure this is exported correctly
 import { useTranslation } from 'react-i18next';

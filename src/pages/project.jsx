@@ -1,5 +1,5 @@
 import SectionsHeader from '../component/sectionsHeader'
-import image from "../assets/img/pro (2).jpg"
+import image from "../assets/img/pro (2).webp"
 import { useTranslation } from 'react-i18next'
 const Project = () => {
   const { t } = useTranslation()

@@ -3,14 +3,14 @@ import { useState, useRef } from "react";
 import { Infobox } from "../component/InfoBlock"
 import  {AdminButton} from "../component/buttons"
 //image import
-import photo1 from "../assets/img/news (1).jpg";
-import photo2 from "../assets/img/news (2).jpg";
-import photo3 from "../assets/img/news (3).jpg";
-import photo4 from "../assets/img/news (4).jpg";
-import photo5 from "../assets/img/news (5).jpg";
-import photo6 from "../assets/img/news (6).jpg";
-import photo7 from "../assets/img/news (7).jpg";
-import photo8 from "../assets/img/news (8).jpg";
+import photo1 from "../assets/img/news (1).webp";
+import photo2 from "../assets/img/news (2).webp";
+import photo3 from "../assets/img/news (3).webp";
+import photo4 from "../assets/img/news (4).webp";
+import photo5 from "../assets/img/news (5).webp";
+import photo6 from "../assets/img/news (6).webp";
+import photo7 from "../assets/img/news (7).webp";
+import photo8 from "../assets/img/news (8).webp";
 // FontAwesome icons for navigation
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';

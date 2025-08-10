@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
-import hand2 from "../assets/img/hand (1).png"
-import hand1 from "../assets/img/hand (2).png"
-import circle from "../assets/img/circle.jpg"
-import image from "../assets/img/about_section.png"
+import hand2 from "../assets/img/hand (1).webp"
+import hand1 from "../assets/img/hand (2).webp"
+import circle from "../assets/img/circle.webp"
+import image from "../assets/img/about_section.webp"
 import { MovingDivRight } from "../component/MovingDivs"
 import { motion } from "motion/react"
 import { useTranslation } from 'react-i18next';

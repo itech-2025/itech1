@@ -2,11 +2,11 @@ import { useState} from "react";
 import { motion } from "motion/react";
 import { AdminButton } from "../component/buttons";
 //image import
-import slide_img1 from "../assets/img/slide1.png"
-import slide_img2 from "../assets/img/slide2.jpg"
-import slide_img3 from "../assets/img/slide3.png"
-import slide_img4 from "../assets/img/slide4.png"
-import slide_img5 from "../assets/img/slide5.png"
+import slide_img1 from "../assets/img/slide1.webp"
+import slide_img2 from "../assets/img/slide2.webp"
+import slide_img3 from "../assets/img/slide3.webp"
+import slide_img4 from "../assets/img/slide4.webp"
+import slide_img5 from "../assets/img/slide5.webp"
 import brand1 from '../assets/img/bg.svg'
 import brand2 from '../assets/img/bg (1).svg'
 // FontAwesome icons for navigation buttons

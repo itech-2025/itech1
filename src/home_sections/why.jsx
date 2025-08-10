@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 //import image
-import image from "../assets/img/Subtract.png"
+import image from "../assets/img/Subtract.webp"
 import visor from "../assets/img/visor-duotone.svg"
 import clock from "../assets/img/clock-user-duotone 1.svg"
 import target from "../assets/img/target-duotone 1.svg"

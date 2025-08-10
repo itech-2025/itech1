@@ -10,14 +10,14 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 // Image imports for product slides
-import image from "../assets/img/State (1).png"
-import image1 from "../assets/img/State (2).png"
-import image2 from "../assets/img/State (3).png"
-import image3 from "../assets/img/State (4).png"
-import image4 from "../assets/img/State (5).png"
-import image5 from "../assets/img/State (6).png"
-import image6 from "../assets/img/State (7).png"
-import image7 from "../assets/img/State (8).png"
+import image from "../assets/img/State (1).webp"
+import image1 from "../assets/img/State (2).webp"
+import image2 from "../assets/img/State (3).webp"
+import image3 from "../assets/img/State (4).webp"
+import image4 from "../assets/img/State (5).webp"
+import image5 from "../assets/img/State (6).webp"
+import image6 from "../assets/img/State (7).webp"
+import image7 from "../assets/img/State (8).webp"
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 

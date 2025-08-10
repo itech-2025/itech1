@@ -2,10 +2,10 @@ import {useParams, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import SectionsHeader from '../component/sectionsHeader';
 
-import subtract1 from "../assets/img/subtract (2).jpg"
-import subtract2 from "../assets/img/subtract (1).png"
-import subtract3 from "../assets/img/subtract (3).jpg"
-import subtract4 from "../assets/img/subtract (4).jpg"
+import subtract1 from "../assets/img/subtract (2).webp"
+import subtract2 from "../assets/img/subtract (1).webp"
+import subtract3 from "../assets/img/subtract (3).webp"
+import subtract4 from "../assets/img/subtract (4).webp"
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 export const allservicesItems = [

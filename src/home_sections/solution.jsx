@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
-import solution_image2 from "../assets/img/solution_image (1).png"
-import solution_image1 from "../assets/img/solution_image (2).png"
-import solution_image3 from "../assets/img/solution_image (3).png"
+import solution_image2 from "../assets/img/solution_image (1).webp"
+import solution_image1 from "../assets/img/solution_image (2).webp"
+import solution_image3 from "../assets/img/solution_image (3).webp"
 import { MovingDivLeft, MovingDivRight } from "../component/MovingDivs"
 import { useTranslation } from 'react-i18next';
 const Solution = () => {

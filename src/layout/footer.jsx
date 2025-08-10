@@ -1,9 +1,9 @@
 import {useState} from 'react'
 //image icons and image
-import image from "../assets/img/footer (1).png"
-import image1 from "../assets/img/footer (2).png"
-import image2 from "../assets/img/footer (3).png"
-import image3 from "../assets/img/footer (4).png"
+import image from "../assets/img/footer (1).webp"
+import image1 from "../assets/img/footer (2).webp"
+import image2 from "../assets/img/footer (3).webp"
+import image3 from "../assets/img/footer (4).webp"
 import icon from "../assets/img/Ficon.svg"
 import icon1 from "../assets/img/Ficon (1).svg"
 import icon2 from "../assets/img/Ficon (2).svg"

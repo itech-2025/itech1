@@ -3,7 +3,7 @@ import i18next from 'i18next'
 import { useState,useRef } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import popupImg from "../assets/img/popup.jpg"
+import popupImg from "../assets/img/popup.webp"
 
 const Popup = () => {
     const {t}=useTranslation()

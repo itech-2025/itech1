@@ -3,7 +3,7 @@ import { motion } from "motion/react"
 import {LeftCard, RightCard} from "../component/card"
 import { useTranslation } from "react-i18next"
 import i18next from "i18next"
-import image1 from "../assets/img/about_section.png"
+import image1 from "../assets/img/about_section.webp"
 import { GrayListDev } from "../component/listDev"
 import SectionsHeader from '../component/sectionsHeader';
 

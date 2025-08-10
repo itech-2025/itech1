@@ -1,10 +1,10 @@
 import { motion } from "motion/react"
 import { InfoBlock } from "../component/InfoBlock"
 // Image imports for service cards
-import subtract1 from "../assets/img/subtract (1).png"
-import subtract2 from "../assets/img/subtract (2).jpg"
-import subtract3 from "../assets/img/subtract (3).jpg"
-import subtract4 from "../assets/img/subtract (4).jpg"
+import subtract1 from "../assets/img/subtract (1).webp"
+import subtract2 from "../assets/img/subtract (2).webp"
+import subtract3 from "../assets/img/subtract (3).webp"
+import subtract4 from "../assets/img/subtract (4).webp"
 import { useTranslation } from "react-i18next"
 const Service = () => {
   const { t } = useTranslation()

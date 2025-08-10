@@ -1,8 +1,8 @@
 import SectionsHeader from '../component/sectionsHeader';
 import ProductImages from '../component/productImages';
-import subtract1 from "../assets/img/solution_image (1).png";
-import subtract2 from "../assets/img/solution_image (2).png";
-import subtract3 from "../assets/img/solution_image (3).png";
+import subtract1 from "../assets/img/solution_image (1).webp";
+import subtract2 from "../assets/img/solution_image (2).webp";
+import subtract3 from "../assets/img/solution_image (3).webp";
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 

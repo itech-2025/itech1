@@ -4,17 +4,17 @@ import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import SectionsHeader from '../component/sectionsHeader';
 import { InfoBlock } from "../component/InfoBlock";
 //images
-import image from "../assets/img/blogs (3).jpg";
-import photo1 from "../assets/img/blogs (1).jpg";
-import photo2 from "../assets/img/blogs (1).png";
-import photo3 from "../assets/img/blogs (2).jpg";
-import photo4 from "../assets/img/blogs (2).png";
-import photo6 from "../assets/img/blogs (3).png";
-import photo7 from "../assets/img/blogs (4).jpg";
-import photo8 from "../assets/img/blogs (5).jpg";
-import photo9 from "../assets/img/blogs (6).jpg";
-import photo10 from "../assets/img/blogs (7).jpg";
-import photo11 from "../assets/img/blogs (8).jpg";
+import image from "../assets/img/blogs (1).webp";
+import photo1 from "../assets/img/blogs (2).webp";
+import photo2 from "../assets/img/blogs (3).webp";
+import photo3 from "../assets/img/blogs (4).webp";
+import photo4 from "../assets/img/blogs (5).webp";
+import photo6 from "../assets/img/blogs (6).webp";
+import photo7 from "../assets/img/blogs (7).webp";
+import photo8 from "../assets/img/blogs (8).webp";
+import photo9 from "../assets/img/blogs (9).webp";
+import photo10 from "../assets/img/blogs (10).webp";
+import photo11 from "../assets/img/blogs (11).webp";
 import { useTranslation } from "react-i18next"
 
 export const allblogsItems = [

@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import { motion, AnimatePresence } from "framer-motion";
-import image from '../assets/img/FAQ.jpg'
+import image from '../assets/img/FAQ.webp'
 import SectionsHeader from '../component/sectionsHeader'
 import { useTranslation } from 'react-i18next'
 const FAQ = () => {

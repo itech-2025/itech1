@@ -1,16 +1,16 @@
 import Marquee from "react-fast-marquee"; //slider
-import image from "../assets/img/brand (1).png"
-import image1 from "../assets/img/brand (2).png"
-import image2 from "../assets/img/brand (3).png"
-import image3 from "../assets/img/brand (4).png"
-import image4 from "../assets/img/brand (5).png"
-import image5 from "../assets/img/brand (6).png"
-import image6 from "../assets/img/brand (7).png"
-import image7 from "../assets/img/brand (8).png"
-import image8 from "../assets/img/brand (9).png"
-import image9 from "../assets/img/brand (10).png"
-import image10 from "../assets/img/brand (11).png"
-import image11 from "../assets/img/brand (12).png"
+import image from "../assets/img/brand (1).webp"
+import image1 from "../assets/img/brand (2).webp"
+import image2 from "../assets/img/brand (3).webp"
+import image3 from "../assets/img/brand (4).webp"
+import image4 from "../assets/img/brand (5).webp"
+import image5 from "../assets/img/brand (6).webp"
+import image6 from "../assets/img/brand (7).webp"
+import image7 from "../assets/img/brand (8).webp"
+import image8 from "../assets/img/brand (9).webp"
+import image9 from "../assets/img/brand (10).webp"
+import image10 from "../assets/img/brand (11).webp"
+import image11 from "../assets/img/brand (12).webp"
 import { useTranslation } from "react-i18next";
 import "../App.css";
 
