@@ -5,7 +5,7 @@ import SectionsHeader from '../component/sectionsHeader';
 import { Infobox } from "../component/InfoBlock";
 
 //image
-import image from "../assets/img/news.png";
+import image from "../assets/img/news.webp";
 import photo1 from "../assets/img/news (1).webp";
 import photo2 from "../assets/img/news (2).webp";
 import photo3 from "../assets/img/news (3).webp";
