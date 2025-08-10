@@ -48,7 +48,7 @@ const SectionsHeader = ({name, description,description1,description2,description
           initial={!hasAnimated ?{ opacity:0, filter:"blur(10px)" }:{}}
           whileInView={{ opacity:1, filter:"blur(0px)" }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className=" max-w-full my-5 mx-auto flex flex-col gap-5 px-3 lg:px-15 md:px-10 text-gray-600 text-lg sm:text-xl font-light font-['Montserrat-Arabic'] leading-loose">
           {description &&<p className={`${fontstyle}`}>{description}</p>}
           {description1 &&<p>{description1}</p>}
