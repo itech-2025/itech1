@@ -42,7 +42,7 @@ const FAQ = () => {
           <div key={index} className="group bg-white pb-2">
             <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              className="w-full relative h-fit py-5 rounded-2xl grid grid-cols-6 sm:gap-10 gap-1 border-t border-gray-200 overflow-hidden transition-all duration-200"
+              className="w-full cursor-pointer relative h-fit py-5 rounded-2xl grid grid-cols-6 sm:gap-10 gap-1 border-t border-gray-200 overflow-hidden transition-all duration-200"
             >
             {/*hover effect*/}
               <div 
