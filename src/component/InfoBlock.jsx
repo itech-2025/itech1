@@ -51,8 +51,8 @@ const Infobox = ({image, date, title, details, goTo = "/", className="", imagest
     };
   return (
     // Main container with click navigation and hover effects
-    <div onClick={handleClick} className="group cursor-pointer relative h-160 w-fit">
-      <div dir={i18next.language === 'ar' ? 'rtl' : 'ltr'} className={`relative w-150 max-h-full overflow-hidden border border-primary/20 bg-white rounded-3xl z-0 ${className}`}>
+    <div onClick={handleClick} className="group cursor-pointer relative h-160 w-full">
+      <div dir={i18next.language === 'ar' ? 'rtl' : 'ltr'} className={`relative w-full max-h-full overflow-hidden border border-primary/20 bg-white rounded-3xl z-0 ${className}`}>
         {/*image */}
         <motion.div 
           initial={{ clipPath: "inset(0% 0% 100% 0%)", filter:"blur(10px)" }}

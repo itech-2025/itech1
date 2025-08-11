@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 import { AdminButton } from "../component/buttons";
 const MovingDivRight = ({text, subText,buttonText, image, className="", style1, style2, transparent, url}) => {
   return (
-    <div dir="rtl"  className="lg:mt-30 mt-15 flex">
+    <div dir="rtl"  className="lg:mt-30 mt-15 flex container mx-auto">
         <motion.div
             initial={{ y: 100, width: "400px", opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 ,width: "880px" }}
@@ -62,7 +62,7 @@ const MovingDivRight = ({text, subText,buttonText, image, className="", style1, 
 const MovingDivLeft = ({text, subText,buttonText, image, className="", style1="", style2="", transparent, url}) => {
   return (
     //container
-    <div dir="rtl" className="lg:mt-30 mt-15 flex justify-end">
+    <div dir="rtl" className="lg:mt-30 mt-15 flex justify-end container mx-auto">
         {/*image container*/}
         <motion.div
             initial={{scaleX:0 }}

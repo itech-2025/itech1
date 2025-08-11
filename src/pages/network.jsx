@@ -51,7 +51,7 @@ const Network = () => {
               text={t(item.text)}
               image={item.image} 
               blockLine="hidden"
-              className={index === allnetworkItems.length - 1 && allnetworkItems.length % 2 !== 0 ? "[grid-column:1/-1] w-full" : "w-full"}   
+              className="w-full"
               boxHeight="h-100"   
               goTo={`/network/${item.id}`}      
             />
