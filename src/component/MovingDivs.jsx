@@ -1,5 +1,6 @@
 import { motion } from "motion/react"
 import { AdminButton } from "../component/buttons";
+import i18next from "i18next";
 const MovingDivRight = ({text, subText,buttonText, image, className="", style1, style2, transparent, url}) => {
   return (
     <div dir="rtl"  className="lg:mt-30 mt-15 flex container mx-auto">
@@ -13,7 +14,7 @@ const MovingDivRight = ({text, subText,buttonText, image, className="", style1, 
                 }}
             viewport={{once:true}}
             className="flex">
-            <div className={`lg:w-[52rem] md:w-[40rem] sm:w-[35rem] w-full rounded-3xl flex items-center justify-between lg:pr-20 sm:pr-10 ${className}`}>
+            <div className={`lg:w-[52rem] md:w-[40rem] sm:w-[35rem] w-full rounded-3xl flex items-center justify-between ${i18next.language==='ar'?"sm:pr-10":"sm:pr-8"} lg:pr-20  ${className}`}>
             {/*content div*/}
                 <motion.div
                     initial={{y:100, opacity:0 }}
@@ -21,9 +22,9 @@ const MovingDivRight = ({text, subText,buttonText, image, className="", style1, 
                     transition={{ duration: 1.5, ease: "easeOut", delay:2 }}
                     viewport={{once:true}}
                     className="flex flex-col sm:items-start items-center gap-4 lg:w-90 sm:w-80 sm:py-0 sm:px-0 py-10 px-5">
-                    <h2 className="lg:text-4xl md:text-3xl text-xl font-normal font-['Montserrat-Arabic'] leading-[54px] mb-2">{text}</h2>
+                    <h2 className={`lg:text-4xl ${i18next.language==='ar'?"md:text-3xl":"sm:text-[1.10rem] sm:-mr-6 md:mr-5"} text-xl font-normal font-['Montserrat-Arabic'] leading-[54px] mb-2`}>{text}</h2>
                     <hr className="h-px opacity-10 border-b lg:w-90 md:w-70 sm:w-55 w-full" />
-                    <p  className="lg:w-96 md:w-70 sm:w-58 sm:text-right text-center md:text-lg text-sm font-light font-['Montserrat-Arabic'] leading-relaxed tracking-wide mb-2">{subText}</p>
+                    <p  className={`lg:w-96 md:w-70 sm:w-58  text-center ${i18next.language==='ar'?"md:text-lg sm:text-right":"md:text-base sm:text-left"} text-sm font-light font-['Montserrat-Arabic'] leading-relaxed tracking-wide mb-2`}>{subText}</p>
                     <AdminButton text={buttonText} className2={`${style2}`} className1={`${style1}`} goTo={url}/>
                 </motion.div>
             {/*for styling*/}    
@@ -91,7 +92,7 @@ const MovingDivLeft = ({text, subText,buttonText, image, className="", style1=""
                 viewport={{once:true}}
                 className={`w-100 my-10 -ml-70 rounded-lg z-1 sm:block hidden ${transparent}`}>
             </motion.div>
-            <div className={`z-0 lg:w-[52rem] md:w-[40rem] sm:w-[35rem] w-full rounded-3xl flex items-center justify-between lg:pl-20 md:pl-10 sm:pl-5 ${className}`}>
+            <div className={`z-0 lg:w-[52rem] md:w-[40rem] sm:w-[35rem] w-full rounded-3xl flex items-center justify-between lg:pl-20 md:pl-10 sm:pl-5 ${i18next.language==='ar'?" md:pl-10 sm:pl-5":" md:pl-10 sm:pl-5"} ${className}`}>
                 {/*style the edge*/}
                 <motion.div
                     initial={{marginRight:'0px' }}
@@ -109,9 +110,9 @@ const MovingDivLeft = ({text, subText,buttonText, image, className="", style1=""
                     transition={{ duration: 1.5, ease: "easeOut", delay:2 }}
                     viewport={{once:true}}
                     className="flex flex-col sm:items-end items-center gap-4 lg:w-90 sm:w-70 w-full sm:py-0 sm:px-0 py-10 px-5">
-                    <h2  className="font-normal sm:text-left font-['Montserrat-Arabic'] leading-[54px] mb-2 lg:text-4xl md:text-3xl text-xl">{text}</h2>
+                    <h2  className={`font-normal ${i18next.language==='ar'?"md:text-3xl mb-2":"sm:text-[1.10rem] mb-0"} sm:text-left font-['Montserrat-Arabic'] leading-[54px]  lg:text-4xl text-xl`}>{text}</h2>
                     <hr className="h-px opacity-10 border-b lg:w-90 md:w-70 sm:w-60 w-full" />
-                    <p  className="lg:w-96 sm:text-left text-center md:w-70 sm:w-58 md:text-lg text-sm font-light font-['Montserrat-Arabic'] leading-relaxed tracking-wide mb-2">{subText}</p>
+                    <p  className={`lg:w-96 sm:text-left text-center md:w-74 sm:w-58 text-sm font-light font-['Montserrat-Arabic'] leading-relaxed tracking-wide ${i18next.language==='ar'?"mb-2 md:text-lg ":"!mb-0 md:text-base sm:text-xs"}`}>{subText}</p>
                     <AdminButton text={buttonText} className2={`${style2}`} className1={`${style1}`} goTo={url}/>
                 </motion.div>
             </div>

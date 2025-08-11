@@ -30,11 +30,12 @@ const Solution = () => {
         <div>
         {solutioncontent.map((items, index) => {
         const content = t(`home.solutions.${index}`, { returnObjects: true });
+
         // Determine starting component based on language
         const isLeft = (isEnglish && index % 2 === 0) || (!isEnglish && index % 2 !== 0);
         const Component = isLeft ? MovingDivLeft : MovingDivRight;
             return(
-            <Component
+            <Component 
                 key={index}
                 text={content.text}
                 subText={content.subText}
