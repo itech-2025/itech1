@@ -34,25 +34,25 @@ const Why = () => {
   }, []);
   return (
     //why section in the home page
-    <section dir='rtl' className='flex flex-col mx-auto lg:mt-30 mt-15 lg:px-18 md:px-9 px-4'>
+    <section dir='rtl' className='flex flex-col lg:mt-30 mt-15 lg:px-18 md:px-9 px-4 overflow-hidden'>
         {isLargeScreen &&<motion.div
             initial={{ clipPath: "inset(0% 0% 100% 0%)", y:15, opacity: 0, filter:"blur(10px)" }}
             whileInView={{ clipPath: "inset(0% 0% 0% 0%)", y:0, opacity: 1, filter:"blur(0px)" }}
             transition={{ duration: 2, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="w-[90vw] h-[72vh] overflow-hidden"
+            className=" mb-4 overflow-hidden"
         >
             <img loading="lazy" src={image} className="w-full"/>
         </motion.div>}
         {isLargeScreen && <motion.div>
             <div className=" bg-dark-primary rounded-b-3xl">
                 <div className="flex justify-between">
-                    <div className="w-52 h-35 bg-dark-primary rounded-t-3xl -mt-28"></div>
-                    <div className="w-52 h-35 bg-dark-primary rounded-t-2xl -mt-28"></div>
+                    <div className="w-52 3xl:w-60 4xl:w-65 h-35 bg-dark-primary rounded-t-3xl -mt-28 3xl:-mt-34"></div>
+                    <div className="w-52 3xl:w-60 4xl:w-65 h-35 bg-dark-primary rounded-t-2xl -mt-28 3xl:-mt-34"></div>
                 </div>
                 <div className="flex justify-between -mt-20">
-                    <div className="w-5 h-13 mr-52 relative bg-transparent border border-transparent rounded-br-3xl shadow-[0px_20px_0px_0px_rgba(0,13,38)]" />
-                    <div className="w-5 h-13 ml-52 relative bg-transparent border border-transparent rounded-bl-3xl shadow-[0px_20px_0px_0px_rgba(0,13,38)]" />
+                    <div className="w-5 h-13 mr-52 3xl:h-19 3xl:mr-60 4xl:mr-65 relative bg-transparent border border-transparent rounded-br-3xl shadow-[0px_20px_0px_0px_rgba(0,13,38)]" />
+                    <div className="w-5 h-13 ml-52 3xl:h-19 3xl:ml-60 4xl:ml-65 relative bg-transparent border border-transparent rounded-bl-3xl shadow-[0px_20px_0px_0px_rgba(0,13,38)]" />
                 </div>
                 <div className="relative h-200 w-[70vw] m-auto">
                     <div>

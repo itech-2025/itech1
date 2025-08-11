@@ -72,20 +72,6 @@ const Services = () => {
                     />
                 </div>
             </li>
-            <div className="md:mt-15">
-                <div className="flex items-center justify-end gap-2 hover:text-primary">
-                    <span className="font-medium text-primary">
-                        <div className='grid grid-cols-2 gap-0.5 group'>
-                            {[1, 2].map((_) => (
-                                <div className='h-2.5 w-2.5 border-2 group-hover:border-t-primary-2 group-hover:border-x-primary-1'/>
-                            ))}
-                            {[1, 2].map((_) => (
-                                <div className='h-2.5 w-2.5 border-2 group-hover:border-t-primary-1 group-hover:border-x-primary'/>
-                             ))}
-                        </div>
-                    </span>
-                </div>
-            </div>
             <li onClick={handleprev} className="group cursor-pointer flex flex-col md:items-end items-center text-center">
                 <button className={`${i18next.language==='en'?"w-25":"w-18"} cursor-pointer text-lg font-light font-['Montserrat-Arabic'] border-b pb-2 border-b-primary-1 group-hover:border-b-primary-2 overflow-hidden`}>
                     <div className="flex items-start gap-2 w-20 transition-all duration-300 ease-in-out transform -translate-x-3 group-hover:translate-x-1 group-hover:bg-gradient-to-b group-hover:from-primary-1 group-hover:to-primary group-hover:bg-clip-text group-hover:text-transparent text-dark-primary">

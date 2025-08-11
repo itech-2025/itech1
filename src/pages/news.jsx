@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import SectionsHeader from '../component/sectionsHeader';
@@ -28,6 +28,7 @@ export const allNewsItems = [
   ];
   
 const News = () => {
+  const paginationRef = useRef(null); 
   const { t } = useTranslation();
   const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
@@ -39,14 +40,19 @@ const News = () => {
     currentPage * itemsPerPage
   );
 
-  const handlePageChange = (pageNum) => setCurrentPage(pageNum);
+  const handlePageChange = (pageNum) => {setCurrentPage(pageNum);
+    if (paginationRef.current) {
+      const topOffset = paginationRef.current.offsetTop - 110; // scroll 110px above
+      window.scrollTo({ top: topOffset, behavior: "smooth" });
+    }
+  }
 
   return (
     <>
       {/*header*/}
       <SectionsHeader name={t("nav.news")} image={image} namestyle='text-white'  />
       {/*content*/} 
-      <div dir='rtl' className="grid grid-cols-1 lg:grid-cols-2 lg:mt-30 mt-15 md:gap-10 lg:mx-18 md:mx-9 mx-5 md:p-5">
+      <div ref={paginationRef} dir='rtl' className="grid grid-cols-1 lg:grid-cols-2 lg:mt-30 mt-15 md:gap-10 lg:mx-18 md:mx-9 mx-5 md:p-5">
         {displayedItems.map((item, index) => (
           <Infobox
             key={index}
@@ -61,7 +67,7 @@ const News = () => {
         ))}
       </div>
       {/* Pagination Bar */}
-      <div dir='rtl' className="flex justify-center items-center gap-2 mt-10 rtl">
+      <div  dir='rtl' className="flex justify-center items-center gap-2 mt-10 rtl">
         {currentPage > 1 && (
           <button
             onClick={() => handlePageChange(currentPage - 1)}

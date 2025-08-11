@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import SectionsHeader from '../component/sectionsHeader';
@@ -31,6 +31,7 @@ export const allblogsItems = [
 ];
   
 const Blogs = () => {
+  const paginationRef = useRef(null);
   const { t } = useTranslation()
   const itemsPerPage = 6;// Number of blog items to show per page
   const [currentPage, setCurrentPage] = useState(1); // Track the current page number
@@ -42,7 +43,12 @@ const Blogs = () => {
     currentPage * itemsPerPage // End index (non-inclusive)
   );
 // Update current page when user selects a different one
-  const handlePageChange = (pageNum) => setCurrentPage(pageNum);
+  const handlePageChange = (pageNum) => {setCurrentPage(pageNum);
+    if (paginationRef.current) {
+      const topOffset = paginationRef.current.offsetTop - 130; // scroll 130px above
+      window.scrollTo({ top: topOffset, behavior: "smooth" });
+    }
+  }
 
   return (
     <>{/*blog header*/}
@@ -51,7 +57,7 @@ const Blogs = () => {
         image={image}
         namestyle='text-white'
          /> {/*list of blog*/}
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:mt-30 mt-15 gap-15 px-4 sm:px-9 lg:px-18 mx-auto">
+      <div ref={paginationRef} className="grid grid-cols-1 lg:grid-cols-2 lg:mt-30 mt-15 gap-15 px-4 sm:px-9 lg:px-18 mx-auto">
         {displayedItems.map((item, index) => (
           <InfoBlock 
               key={index}

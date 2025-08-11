@@ -20,6 +20,8 @@
     --color-gray-1: rgba(55, 65, 81, 1);
     --color-gray-2: rgba(0,0,0 , .8);
     --color-color-text:#5F8EBC;
+    --breakpoint-4xl:115.625em;
+    --breakpoint-3xl:103.75em;
     --breakpoint-xlscreen:90rem;
     --breakpoint-largest: 81em;  
     --breakpoint-large: 65.75em;  

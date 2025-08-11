@@ -13,6 +13,7 @@ import logo from '../../public/Logo.svg'
 import {AdminButton} from "../component/buttons";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
+import { useLocation } from "react-router-dom";
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import { useTranslation } from 'react-i18next'
@@ -20,7 +21,7 @@ import i18next from 'i18next'
 const Footer = () => {
   const { t } = useTranslation()
   const [activelink, setactivelink]=useState(" ")
-
+  const location = useLocation();
   const swipercontent = [image, image1, image2, image3];//swiper content
   const footerNav=[
     {href:"/", label:t("footer.links.home")},
@@ -39,6 +40,7 @@ const Footer = () => {
   return (
     <section className='w-full md:pt-20 gap-8 flex flex-col mt-15 md:mt-30 mx-auto px-4 md:px-9 lg:px-16 sm:mb-10 mb-5'>
       {/*top footer content*/}
+      {location.pathname === "/" && (
         <div className="relative">
           {/*background image slider */}
           <Swiper
@@ -72,7 +74,7 @@ const Footer = () => {
               <AdminButton text={t("footer.button-text")} className2="group-hover:bg-primary" className1="bg-transparent text-white border-white lg:mt-16 md:mt-14 mt-5 group-hover:!text-primary" hoverColor="!bg-white" textColor="group-hover:!text-primary" goTo='/contact'/>
             </div>
           </div>
-        </div>
+        </div>)}
       {/*footer navigation*/}
         <div className="bg-dark-primary rounded-3xl -mt-20 relative z-2 px-5 md:px-10 lg:px-15 ">
           <div className='grid lg:grid-cols-3 grid-rows-1 lg:gap-30 relative py-10 sm:py-15 mb-15'>
