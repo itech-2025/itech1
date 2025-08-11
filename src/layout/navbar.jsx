@@ -166,7 +166,7 @@ function Navbar  () {
           {/* container content */}
           <div  className="justify-between flex ">
             {/* logo  */}
-            <button  onClick={handleHome} className="sm:mr-8 mr-3 sm:ml-5 -ml-3 mt-1.5 mb-3 small:w-fit w-26 small:h-fit h-15 ">
+            <button  onClick={handleHome} className="sm:mr-8 mr-3 cursor-pointer sm:ml-5 -ml-3 mt-1.5 mb-3 small:w-fit w-26 small:h-fit h-15 ">
                 <img loading="lazy" src={logo} alt="logo" className='mt-2'/>
             </button>
               {/* nav container */}

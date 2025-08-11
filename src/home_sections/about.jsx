@@ -3,12 +3,14 @@ import hand2 from "../assets/img/hand (1).webp"
 import hand1 from "../assets/img/hand (2).webp"
 import circle from "../assets/img/circle.webp"
 import image from "../assets/img/about_section.webp"
-import { MovingDivRight } from "../component/MovingDivs"
+import { MovingDivRight, MovingDivLeft } from "../component/MovingDivs"
 import { motion } from "motion/react"
 import { useTranslation } from 'react-i18next';
 import i18next from "i18next"
 const About = () => {
-const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const isEnglish = i18n.language === 'en';
+    const MovingComponent = isEnglish ? MovingDivLeft : MovingDivRight;
 
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     useEffect(() => {
@@ -98,7 +100,7 @@ const { t } = useTranslation();
         </motion.div>
         {/*about us section content */}
         <div className="lg:mx-18 md:mx-10 mx-4 bg-white">
-            <MovingDivRight 
+            <MovingComponent 
             text={t("home.about.text")} 
             subText={t("home.about.subtext")} 
             image={image} buttonText={t("home.about.buttontext")}

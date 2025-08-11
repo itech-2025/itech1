@@ -5,7 +5,8 @@ import solution_image3 from "../assets/img/solution_image (3).webp"
 import { MovingDivLeft, MovingDivRight } from "../component/MovingDivs"
 import { useTranslation } from 'react-i18next';
 const Solution = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const isEnglish = i18n.language === 'en';
     const solutioncontent=[
         { key: 0,image:solution_image1,url:"smart_home"},
         { key: 1,image:solution_image2,url:"security"},
@@ -27,13 +28,13 @@ const Solution = () => {
             <hr className="self-stretch opacity-10 border-b border-gray-800"/>
         </div>    
         <div>
-        {solutioncontent.map((items, index)=>{
-            const isRight = index % 2 === 0; // Determine if the index is even or odd
-            // Choose the component based on the index
-            const Component = isRight ? MovingDivRight : MovingDivLeft; // Use MovingDivRight for even indices and MovingDivLeft for odd indices
-            const content = t(`home.solutions.${index}`, { returnObjects: true });
+        {solutioncontent.map((items, index) => {
+        const content = t(`home.solutions.${index}`, { returnObjects: true });
+        // Determine starting component based on language
+        const isLeft = (isEnglish && index % 2 === 0) || (!isEnglish && index % 2 !== 0);
+        const Component = isLeft ? MovingDivLeft : MovingDivRight;
             return(
-            <Component 
+            <Component
                 key={index}
                 text={content.text}
                 subText={content.subText}
