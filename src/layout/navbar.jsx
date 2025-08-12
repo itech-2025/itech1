@@ -194,7 +194,7 @@ function Navbar  () {
                         <a
                           href={link.href}
                           onClick={() => handleLinkClick(link.href)}
-                          className={`relative flex items-center justify-between h-11 px-4 overflow-hidden rounded-3xl transform duration-400 group-hover:bg-white group-hover:text-primary
+                          className={`relative flex items-center justify-between h-11 px-4 overflow-hidden rounded-3xl transform duration-400 group-hover:bg-gray-100 group-hover:text-primary
                             ${navOnHero ? "text-white" : "text-primary"}
                             ${activelink === link.href || isParentActive ? "bg-gradient-to-b from-blue-950 to-sky-800 text-white" : ""}
                           `}
